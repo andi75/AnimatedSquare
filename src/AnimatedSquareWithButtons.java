@@ -4,13 +4,12 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+@SuppressWarnings("serial")
 public class AnimatedSquareWithButtons extends JPanel implements Runnable, ActionListener
 {
 	double t = 0;
@@ -40,9 +39,9 @@ public class AnimatedSquareWithButtons extends JPanel implements Runnable, Actio
 	}
 	
 	@Override
-	public void paint (Graphics g)
+	public void paintComponent(Graphics g)
 	{
-		super.paint(g);
+		super.paintComponent(g);
 		int w = this.getWidth();
 		int h = this.getHeight();
 		

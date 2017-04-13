@@ -6,6 +6,7 @@ import java.awt.event.MouseListener;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+@SuppressWarnings("serial")
 public class AnimatedSquare extends JPanel implements Runnable, MouseListener
 {
 	double t = 0;
@@ -26,9 +27,9 @@ public class AnimatedSquare extends JPanel implements Runnable, MouseListener
 	}
 	
 	@Override
-	public void paint (Graphics g)
+	public void paintComponent(Graphics g)
 	{
-		super.paint(g);
+		super.paintComponent(g);
 		int w = this.getWidth();
 		int h = this.getHeight();
 		
