@@ -6,12 +6,11 @@ import java.awt.event.MouseListener;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class AnimatedSquare extends JPanel implements Runnable, MouseListener {
-
+public class AnimatedSquare extends JPanel implements Runnable, MouseListener
+{
 	double t = 0;
 	boolean isPaused = false;
 
-	
 	public static void main(String[] args) {
 		AnimatedSquare sq = new AnimatedSquare();
 		sq.setPreferredSize(new Dimension(400, 400));
@@ -64,14 +63,10 @@ public class AnimatedSquare extends JPanel implements Runnable, MouseListener {
 
 	@Override
 	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
 	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
